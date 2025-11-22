@@ -65,8 +65,7 @@ public class PlaySound : MonoBehaviour
 
     public void OnTargetStatusChanged(ObserverBehaviour behaviour, TargetStatus targetStatus)
     {
-        bool hasFound = (targetStatus.Status == Status.TRACKED ||
-            targetStatus.Status == Status.EXTENDED_TRACKED);
+        bool hasFound = (targetStatus.Status == Status.TRACKED);
         if(!hasFound){
             audio.Stop();
             activateButton();
