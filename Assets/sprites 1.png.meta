@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9d5d7457179722629b57f8c6b7d5693e
+guid: 3d6c31c9f4a0ba141b029624fb952f7b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -93,60 +93,47 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: playing
+      name: play
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 510
-        height: 511
+        width: 640
+        height: 640
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9bcc400ab12bacad8485f5fda845de9
-      internalID: -382805231
+      spriteID: d6553c70ada7ed140a7d2c6fee37d933
+      internalID: 579684805
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: play
+      name: pause
       rect:
         serializedVersion: 2
-        x: 510
+        x: 640
         y: 0
-        width: 510
-        height: 511
+        width: 640
+        height: 640
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b5aab92842e31203bd6088019ce001e
-      internalID: -150450421
+      spriteID: 4d5c7f99554a489499f55752fe58efa0
+      internalID: 111616667
       vertices: []
       indices: 
       edges: []
@@ -154,7 +141,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 7e2145575ca491a499067d26e0f089ff
     internalID: 0
     vertices: []
     indices: 
@@ -162,8 +149,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      play: -150450421
-      playing: -382805231
+      pause: 111616667
+      play: 579684805
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

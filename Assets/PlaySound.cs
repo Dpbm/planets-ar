@@ -2,15 +2,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Vuforia;
 
 public class PlaySound : MonoBehaviour
 {
 
     [SerializeField] private Sprite activeButtonSprite;
     [SerializeField] private Sprite disabledButtonSprite;
-    [SerializeField] private Image button;
+    [SerializeField] private UnityEngine.UI.Image button;
     [SerializeField] private AudioSource audio;
 
+     private ObserverBehaviour observerBehaviour;
+
+    void Start()
+    {
+        // Look for ObserverBehaviour in parent objects
+        observerBehaviour = GetComponentInParent<ObserverBehaviour>();
+
+        if (observerBehaviour == null)
+        {
+            Debug.LogError("No ObserverBehaviour found in parent hierarchy!");
+            return;
+        }
+
+        observerBehaviour.OnTargetStatusChanged += OnTargetStatusChanged;
+
+    }
 
     public void Update()
     {
@@ -44,5 +61,15 @@ public class PlaySound : MonoBehaviour
     private void disableButton()
     {
         button.sprite = disabledButtonSprite;
+    }
+
+    public void OnTargetStatusChanged(ObserverBehaviour behaviour, TargetStatus targetStatus)
+    {
+        bool hasFound = (targetStatus.Status == Status.TRACKED ||
+            targetStatus.Status == Status.EXTENDED_TRACKED);
+        if(!hasFound){
+            audio.Stop();
+            activateButton();
+        }
     }
 }
