@@ -4,7 +4,7 @@
 
 This is our final project for our AR/VR classes. The main idea was to build an AR eductional application for teaching about our solar system.
 
-To accomplish it, we use Unity + Vuforia to create the scenes, add elements, manage scripts, etc. We created the Image targes using `Canva` and the audios with help of `ElevenLabs TTS`.
+To accomplish it, we used Unity + Vuforia to create the scenes, add elements, manage scripts, etc. We created the Image targes using `Canva` and the audios with help of `ElevenLabs TTS`.
 
 
 ## Usage
