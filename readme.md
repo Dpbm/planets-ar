@@ -2,7 +2,7 @@
 
 # Planets AR
 
-This is our final project for our AR/VR classes. The main idea was to build an AR eductional application for teaching about our solar system.
+This is our final project for our AR/VR classes. The main idea was to build an AR educational application for teaching about our solar system.
 
 To accomplish it, we used Unity + Vuforia to create the scenes, add elements, manage scripts, etc. We created the Image targes using `Canva` and the audios with help of `ElevenLabs TTS`.
 
@@ -20,3 +20,12 @@ git lfs fetch --all
 ```
 
 2. open the unity hub and import the project folder
+
+
+## Presentation Day
+
+<img src="./photos/photo-1.jpeg" float="left" width="400px" height="auto" />
+<img src="./photos/photo-2.jpeg" float="left" width="400px" height="auto" />
+<img src="./photos/photo-3.jpeg" float="left" width="400px" height="auto" />
+<img src="./photos/photo-4.jpeg" float="left" width="400px" height="auto" />
+<img src="./photos/photo-5.jpeg" float="left" width="400px" height="auto" />
